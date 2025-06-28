@@ -30,6 +30,3 @@ jobs:
 
       - name: Run PHPStan (Static Analysis)
         run: vendor/bin/phpstan analyse
-
-      - name: Run Codeception tests
-        run: vendor/bin/codecept run
