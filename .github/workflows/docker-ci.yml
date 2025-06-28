@@ -4,11 +4,17 @@ on:
   push:
     branches: [main]
   pull_request:
+    paths:
+      - 'auction-service/**'
     branches: [main]
 
 jobs:
   php-ci:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: auction-service
 
     steps:
       - name: Checkout code
