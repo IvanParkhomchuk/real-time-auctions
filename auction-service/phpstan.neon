@@ -5,3 +5,5 @@ parameters:
         - tests
     bootstrapFiles:
         - bootstrap/app.php
+    excludePaths:
+            - tests/*
